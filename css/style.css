@@ -39,23 +39,35 @@ body {
     font-weight: bold;
     letter-spacing: 0.1em;
     font-size: 25px;
+    
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     transition: all .3s ease-in;
 }
-  
-.navigationBar a:visited {
+
+a.nav-link:link
+{
     color: white;
+   text-decoration: none;
 }
-
-.navigationBar a.active {
-    color: blue;
+a.nav-link:visited
+{
+    color: white;
+   text-decoration: none;
 }
-
-.navigationBar  a:hover{
+a.nav-link:hover
+{
     color:gold;
+   text-decoration: none;
 }
+a.nav-link:active
+{
+    color: white;
+   text-decoration: none;
+}
+  
+
 
 #landing-image {
     background-image: url("/img/background-landing.jpg");
