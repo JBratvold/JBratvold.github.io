@@ -11,6 +11,12 @@ body {
     overflow-x: hidden;
 }
 
+.navigationBar {
+  position: fixed;
+  width: 100%;
+  z-index: 1; /* Bring to Front */
+}
+
 .navigationBar ul {
     list-style: none;
     margin: 0;
@@ -20,8 +26,8 @@ body {
 
 .navigationBar li {
     display: inline-block;
-    padding: 20px 24px;
-    margin-top: 50px;
+    padding: 0.5em;
+    margin: 1em;
 }
 
 .navigationBar a {
@@ -69,7 +75,7 @@ a.nav-link:active {
 .column {
     float: left;
     width: 50%;
-    padding: 10px;
+    padding: 5em;
     text-align: center;
 }
   
