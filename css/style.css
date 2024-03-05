@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -130,8 +131,6 @@ a.nav-link:active {
     .hello-message {
         margin-top: 0;
         padding-top: 40px;
-        
-
     }
 
     .column #computer-icon {
@@ -143,20 +142,12 @@ a.nav-link:active {
     }
 }
 
-
-
-
-
-
-
-
+/* GLOWING BUTTON */
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
 :root {
     --glow-color: hsl(186 100% 69%);
 }
-
-
 
 .glowing-btn {
   position: relative;
@@ -353,13 +344,4 @@ a.nav-link:active {
     font-size: 1em;
   }
 }
-
-
-
-
-
-
-
-
-
 
