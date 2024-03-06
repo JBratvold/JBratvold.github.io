@@ -414,6 +414,19 @@ a.nav-link:active {
   }
 }
 
+#classifierBotProjectCard img {
+  height: 50%;
+  width: 50%;
+}
+
+#wordleSolverProjectCard img {
+  height: 50%;
+  width: 50%;
+}
+
+#projects {
+  background-color: grey;
+}
 
 .project-card a {
   font-size: 1em;
@@ -424,17 +437,25 @@ a.nav-link:active {
 }
 
 .project-card img {
-  height: 25%;
-  width: 25%;
-  background-color: black;
+  height: 50%;
+  width: 50%;
+
 }
 
 .project-card {
   margin-top: 1em;
-  padding-top: 1em;
+  padding: 1em;
   border: 0.5em solid black;
   transition: .5s ease;
   opacity: 0.6;
+
+  height: 30em;
+  width: 100%;
+  
+  border-radius: 25px;
+  background-color: rgb(42, 57, 125);
+
+
 }
 
 .project-card:hover {
