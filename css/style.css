@@ -26,7 +26,7 @@ body {
 
 .navigationBar li {
     display: inline-block;
-    padding: 0.5em;
+    padding: 0.2em;
     margin: 1em;
 }
 
@@ -37,7 +37,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.1em;
-    font-size: 20px;
+    font-size: 17px;
     
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
@@ -72,8 +72,6 @@ a.nav-link:active {
     height: 100vh;
 }
 
-
-
 .column  {
     float: left;
     width: 50%;
@@ -82,10 +80,6 @@ a.nav-link:active {
     text-align: center;
 }
 
-
-
-
-  
 .row:after {
     content: "";
     display: table;
