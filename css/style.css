@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(74, 54, 225);
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
 }
 
@@ -15,6 +15,11 @@ body {
   position: fixed;
   width: 100%;
   z-index: 1; /* Bring to Front */
+
+  border-bottom: .8px solid #c5c3c3;
+  background-color: rgb(42, 57, 125);
+  margin-bottom: 1em;
+
 }
 
 .navigationBar ul {
