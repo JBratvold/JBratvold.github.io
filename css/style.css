@@ -26,8 +26,8 @@ body {
 
 .navigationBar li {
     display: inline-block;
-    padding: 0.2em;
-    margin: 1em;
+    padding: 0.4em;
+    margin: 2em;
 }
 
 .navigationBar a {
@@ -36,8 +36,8 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 0.1em;
-    font-size: 17px;
+    letter-spacing: 0.2em;
+    font-size: 18px;
     
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
@@ -137,6 +137,17 @@ a.nav-link:active {
     .column #computer-icon {
         display: none;
     }
+
+    .navigationBar li {
+      display: inline-block;
+      padding: 0;
+      margin: 0.5em;
+    }
+
+    .navigationBar a {
+      letter-spacing: 0.05em;
+      font-size: 15px;
+  }
 }
 
 @media screen and (max-height: 701px){
