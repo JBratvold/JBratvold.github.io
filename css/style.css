@@ -331,8 +331,10 @@ a.nav-link:active {
 
 #projects {
   background-color: grey;
-  padding-top: 6.5em;
-  padding-bottom: 1em;
+  padding: 2em;
+}
+
+#projects img {
 
 }
 
