@@ -353,7 +353,6 @@ a.nav-link:active {
     width: 100%;
   }
 
-
   .hello-message {
       margin-top: 0;
       padding-top: 30px;
@@ -370,15 +369,15 @@ a.nav-link:active {
   }
 
   .navigationBar a {
-    letter-spacing: 0.05em;
-    font-size: 12px;
+    letter-spacing: 0.04em;
+    font-size: 11px;
   }
 }
 
 
 @media screen and (max-height: 790px) {
   .hello-message p {
-      font-size:1.5em;
+      font-size:2em;
   }
 
   .hello-message h2 {
@@ -399,6 +398,16 @@ a.nav-link:active {
   .glowing-btn{
     font-size: 1em;
   }
+
+  .hello-message h2 {
+    font-size: 5em;
+}
+
+  .hello-message p {
+    font-size: 3em;
+
+  }
+
 }
 
 
