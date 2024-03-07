@@ -398,19 +398,7 @@ a.nav-link:active {
   }
 }
 
-@media screen and (max-height: 650px) {
-  .hello-message h2 {
-      margin-top: 0;
-      padding-top: 0;
-  }
 
-  .hello-message p {
-    display:none;
-  }
-  .glowing-btn {
-      display: inline;
-  }
-}
 
 @media screen and (max-height: 500px) {
   .hello-message h2 {
