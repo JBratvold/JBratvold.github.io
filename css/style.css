@@ -442,11 +442,11 @@ a.nav-link:active {
   }
 
   .hello-message h2 {
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .hello-message .job-title {
-    font-size: 2em;
+    font-size: 1.5em;
     display: block;
   }
 }
