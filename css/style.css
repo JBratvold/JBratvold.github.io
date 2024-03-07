@@ -41,8 +41,8 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 0.2em;
-    font-size: 18px;
+    letter-spacing: 0.05em;
+    font-size: 16px;
     
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
@@ -107,8 +107,8 @@ a.nav-link:active {
    margin-top: 18vh;
 }
 
-.hello-message h2,p {
-    font-size: 4em;
+.hello-message h2 {
+    font-size: 6em;
 }
 
 .hello-message p {
@@ -375,7 +375,7 @@ a.nav-link:active {
 }
 
 
-@media screen and (max-height: 790px) {
+@media screen and (max-height: 820px) {
   .hello-message p {
       font-size:2em;
   }
@@ -386,13 +386,32 @@ a.nav-link:active {
   }
 
   .column #computer-icon {
-      margin-top: 4em; 
+      margin-top: 8em; 
   }
 
   .glowing-btn {
       display: inline;
   }
 }
+
+
+@media screen and (max-height: 610px) {
+  .hello-message h2 {
+      margin-top: 0;
+      padding-top: 0;
+  }
+
+  .hello-message p {
+    display:none;
+  }
+  .glowing-btn {
+      display: none;
+  }
+}
+
+
+
+
 
 @media only screen and (max-width: 600px) {
   .glowing-btn{
@@ -405,30 +424,11 @@ a.nav-link:active {
 
   .hello-message p {
     font-size: 3em;
-
   }
-
-}
-
-
-@media screen and (max-height: 565px) {
-  .hello-message h2 {
-      margin-top: 0;
-      padding-top: 0;
-  }
-
-  .hello-message p {
-    display:none;
-  }
-  .glowing-btn {
-      display: none;
-  }
-
 }
 
 @media screen and (max-width: 800px) {
   .column #computer-icon {
     margin-left: 3em; 
   }
-
 }
