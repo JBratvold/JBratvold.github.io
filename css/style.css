@@ -109,10 +109,12 @@ a.nav-link:active {
 
 .hello-message h2 {
     font-size: 6em;
+    color:bisque;
 }
 
 .hello-message p {
   font-size: 3em;
+  color:azure;
 }
 
 @keyframes updown {
@@ -334,8 +336,15 @@ a.nav-link:active {
   padding: 2em;
 }
 
-#projects img {
+.card-deck {
+  margin-top: 1em;
+}
 
+.card-deck img {
+  float: left;
+  width:  100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 
