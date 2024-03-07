@@ -31,7 +31,7 @@ body {
 
 .navigationBar li {
     display: inline-block;
-    padding: 0.4em;
+    padding: 0.3em;
     margin: 2em;
 }
 
@@ -355,25 +355,29 @@ a.nav-link:active {
 
   .hello-message {
       margin-top: 0;
-      padding-top: 30px;
+      padding-top: 1em;
   }
 
   .column #computer-icon {
       display: none;
   }
 
+  .hello-message .job-title {
+    font-size: 3em;
+  }
+
+
   .navigationBar li {
     display: inline-block;
     padding: 0;
-    margin: 0.5em;
+    margin: 0.2em;
   }
 
   .navigationBar a {
     letter-spacing: 0.04em;
-    font-size: 11px;
+    font-size: 9.5px;
   }
 }
-
 
 @media screen and (max-height: 820px) {
   .hello-message p {
@@ -394,8 +398,21 @@ a.nav-link:active {
   }
 }
 
+@media screen and (max-height: 650px) {
+  .hello-message h2 {
+      margin-top: 0;
+      padding-top: 0;
+  }
 
-@media screen and (max-height: 610px) {
+  .hello-message p {
+    display:none;
+  }
+  .glowing-btn {
+      display: inline;
+  }
+}
+
+@media screen and (max-height: 500px) {
   .hello-message h2 {
       margin-top: 0;
       padding-top: 0;
@@ -408,10 +425,6 @@ a.nav-link:active {
       display: none;
   }
 }
-
-
-
-
 
 @media only screen and (max-width: 600px) {
   .glowing-btn{
@@ -432,3 +445,41 @@ a.nav-link:active {
     margin-left: 3em; 
   }
 }
+
+
+@media only screen and (max-width: 800px) and (max-height: 600px) {
+  .glowing-btn{
+    font-size: 1em;
+    display: inline;
+  }
+
+  .hello-message h2 {
+    font-size: 4em;
+  }
+
+  .hello-message .job-title {
+    font-size: 2em;
+    display: block;
+  }
+}
+
+@media only screen and (max-height: 350px) {
+  .glowing-btn {
+    margin: 1em;
+  }
+
+  .hello-message h2 {
+    font-size: 2em;
+    background-color: red;
+
+  }
+
+  .hello-message .job-title {
+    font-size: 1em;
+  }
+
+  .column #computer-icon {
+    margin-top:2em;
+  }
+}
+
