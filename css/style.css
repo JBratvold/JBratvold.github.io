@@ -151,13 +151,13 @@ a.nav-link:active {
 /* PROJECT SECTION AND CARDS */
 #projects {
   background-color:  rgb(42, 57, 125);
-  padding: 10em 2em 0em 2em;
+  padding: 10em 1em 0em 1em;
 }
 
 .card {
   border:1px solid black;
   transition:.3s;
-  margin: 5em;
+  margin: 1em 0.25em 0em 0.25em;
   opacity: 0.8;
   
 }
@@ -171,7 +171,7 @@ a.nav-link:active {
 
 .card:hover{
   box-shadow: 8px 8px 8px black;
-  transform:scale(1.09);
+  transform:scale(1.04);
   opacity: 1;
 }
 
