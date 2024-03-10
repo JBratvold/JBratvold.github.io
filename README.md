@@ -1,3 +1,3 @@
 # JBratvold.github.io
-Personal Website
+Personal Website:
 https://jbratvold.github.io/
