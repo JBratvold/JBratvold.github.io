@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -11,6 +12,13 @@ body {
     overflow-x: hidden;
 }
 
+/* SECTIONS */ 
+#projects, #about, #contact {
+  background-color:  rgb(42, 57, 125);
+  padding: 5em 5em 0em 5em;
+}
+
+/* NAV BAR */
 .navigationBar {
   position: fixed;
   width: 100%;
@@ -70,6 +78,7 @@ a.nav-link:active {
     text-decoration: none;
 }
 
+/* LANDING PAGE */
 #landing-image {
     background-image: url("/img/background-landing.jpg");
     background-size: cover;
@@ -149,15 +158,10 @@ a.nav-link:active {
   }
 
 /* PROJECT SECTION AND CARDS */
-#projects {
-  background-color:  rgb(42, 57, 125);
-  padding: 5em;
-}
-
 .card {
   border:1px solid black;
   transition:.3s;
-  margin: 2em;
+  margin: 2em 2em 0em 2em;
   opacity: 0.8;
   
 }
@@ -400,8 +404,6 @@ a.nav-link:active {
 }
 
 
-
-
 /* DIFFERENT SCREEN SIZES */
 @media screen and (max-width: 800px) and (max-height: 1000px) {
   .landing-intro .column   {
@@ -486,7 +488,7 @@ a.nav-link:active {
     font-size: 3em;
   }
 
-  #projects {
+  #projects,#about,#contact {
     padding: 2em;
   }
 }
