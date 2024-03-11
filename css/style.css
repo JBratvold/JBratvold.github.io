@@ -4,6 +4,11 @@
     scroll-behavior: smooth;
 }
 
+.content {
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -497,6 +502,7 @@ a.nav-link:active {
   .column #computer-icon {
     margin-left: 3em; 
   }
+
 }
 
 
@@ -531,6 +537,12 @@ a.nav-link:active {
 
   .column #computer-icon {
     margin-top:2em;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .content {
+    padding: 0em;
   }
 }
 
