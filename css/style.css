@@ -5,8 +5,8 @@
 }
 
 .content {
-  padding-left: 10em;
-  padding-right: 10em;
+  padding-left: 18em;
+  padding-right: 18em;
 }
 
 body {
@@ -15,6 +15,11 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
+}
+
+/* Font Awesome Icons */
+.fa-canadian-maple-leaf {
+  color: red;
 }
 
 /* SECTIONS */ 
@@ -540,7 +545,9 @@ a.nav-link:active {
   }
 }
 
-@media only screen and (max-width: 1200px){
+
+
+@media only screen and (max-width: 1350px){
   .content {
     padding: 0em;
   }
