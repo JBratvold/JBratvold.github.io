@@ -30,7 +30,6 @@ sectionTitles.forEach(sectionTitle => {
             gsap.to(sectionTitle, { opacity: 1, x: 0, duration: 1 });
         } else {
             // If not in the viewport, you can reset or hide the element
-            gsap.to(sectionTitle, { opacity: 0, x:-30 });
         }
     });
 });
