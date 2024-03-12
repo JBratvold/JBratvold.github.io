@@ -27,7 +27,7 @@ sectionTitles.forEach(sectionTitle => {
         // Check if the section title is in the viewport
         if (isInViewport(sectionTitle)) {
             // Animate the section title using GSAP
-            gsap.to(sectionTitle, { opacity: 1, x: 0, duration: 1, scrub: true });
+            gsap.to(sectionTitle, { opacity: 1, x: 0, duration: 1 });
         } else {
             // If not in the viewport, you can reset or hide the element
             gsap.to(sectionTitle, { opacity: 0, x:-30 });
@@ -43,7 +43,7 @@ sectionTexts.forEach(text => {
         // Check if the section title is in the viewport
         if (isInViewport(text)) {
             // Animate the section title using GSAP
-            gsap.to(text, { opacity: 1, x: 0, duration: 1, scrub: true });
+            gsap.to(text, { opacity: 1, x: 0, duration: 1});
         } else {
             // If not in the viewport, you can reset or hide the element
             // gsap.to(text, { opacity: 0, x:30 });
