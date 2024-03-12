@@ -5,8 +5,8 @@
 }
 
 .content {
-  padding-left: 18em;
-  padding-right: 18em;
+  padding-left: 15em;
+  padding-right: 15em;
 }
 
 body {
@@ -552,6 +552,8 @@ a.nav-link:active {
     padding: 0em;
   }
 }
+
+
 
 
 
