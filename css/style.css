@@ -21,6 +21,34 @@ body {
     overflow-x: hidden;
 }
 
+.highlight-text {
+  color: gold;
+}
+
+.section-title {
+  font-size: 5em;
+  color: white;
+}
+
+.horizontal-line {
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.section-text {
+  font-size: 2em;
+  color: white;
+}
+
+.sub-title {
+  font-size: 3.5em;
+}
+
+.sub-horizontal-line {
+  border: 2.5px solid white;
+  border-radius: 5px;
+}
+
 /* Font Awesome Icons */
 .fa-canadian-maple-leaf {
   color: red;
@@ -126,22 +154,6 @@ a.nav-link:active {
 .hello-message p {
   font-size: 3em;
   color:azure;
-}
-
-.section-title {
-  font-size: 5em;
-  color: white;
-}
-
-.horizontal-line {
-  border: 5px solid white;
-  border-radius: 5px;
-}
-
-.section-text {
-  font-size: 2em;
-  color: white;
-  
 }
 
 /* COMPUTER ICON ANIMATE */
@@ -276,10 +288,6 @@ a.nav-link:active {
 
 .footer {
   height: 10vh;
-}
-
-#my-email {
-  color: gold;
 }
 
 .footer-name {
