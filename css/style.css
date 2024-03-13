@@ -49,6 +49,10 @@ body {
   border-radius: 5px;
 }
 
+.email-small {
+  font-size: 0.75em;
+}
+
 /* Font Awesome Icons */
 .fa-canadian-maple-leaf {
   color: red;
@@ -642,11 +646,6 @@ a.nav-link:active {
   }
 }
 
-@media only screen and (max-width: 100px){
-  .email-small {
-    font-size: 0.5em;
-  }
-}
 
 
 
