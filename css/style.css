@@ -642,6 +642,12 @@ a.nav-link:active {
   }
 }
 
+@media only screen and (max-width: 100px){
+  .email-small {
+    font-size: 0.5em;
+  }
+}
+
 
 
 
