@@ -681,8 +681,8 @@ a.nav-link:active {
 
 @media only screen and (max-width: 100px){
   .column-images {
-    height: 10em;
-    width: 10em;
+    height: 1em;
+    width: 1em;
 
   }
 }
