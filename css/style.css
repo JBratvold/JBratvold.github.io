@@ -688,8 +688,8 @@ a.nav-link:active {
   .column-images {
     background-color: red;
     color: green;
-    height: 5em;
-    width: 5em;
+    height: 10em;
+    width: 10em;
   }
 }
 
