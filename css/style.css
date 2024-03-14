@@ -614,3 +614,82 @@ a.nav-link:hover {
         width: 15em;
     }
 }
+
+.highlight-word {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* First "Woof Woof" text without rotation */
+.highlight-word:hover::before {
+    content: "Woof";
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    transform: rotate(-45deg); /* Rotate by -45 degrees */
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    animation: pop-up-1 0.5s ease-in-out forwards, float-up 2s ease-in-out 0.25s; /* 1-second delay */
+    color: rgb(83, 54, 54);
+    font-weight: bolder;
+}
+
+/* Second "Woof Woof" text angled at 45 degrees */
+.highlight-word:hover::after {
+    content: "Woof";
+    position: absolute;
+    bottom: 5%;
+    left: 125%;
+    transform: rotate(-45deg); /* Rotate by -45 degrees */
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    animation: pop-up-2 1s ease-in-out forwards, float-up 2s ease-in-out 0.25s; /* 1-second delay */
+    color: rgb(83, 54, 54);
+    font-weight: bolder;
+}
+
+@keyframes pop-up-1 {
+    0% {
+        transform: translate(-50%, 0) scale(0) rotate(-45deg);;
+        opacity: 0;
+    }
+    80% {
+        transform: translate(-50%, -20px) scale(1.1) rotate(-45deg);;
+    }
+    99% {
+        transform: translate(-50%, -20px) scale(1) rotate(-45deg);;
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -20px) scale(1) rotate(-45deg);;
+        opacity: 0;
+    }  
+}
+@keyframes pop-up-2 {
+    0% {
+        transform: translate(-50%, 0) scale(0) rotate(45deg);;
+        opacity: 0;
+    }
+    80% {
+        transform: translate(-50%, -20px) scale(1.1) rotate(45deg);;
+    }
+    99% {
+        transform: translate(-50%, -20px) scale(1) rotate(45deg);;
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -20px) scale(1) rotate(45deg);;
+        opacity: 0;
+    }  
+}
+
+@keyframes float-up {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
