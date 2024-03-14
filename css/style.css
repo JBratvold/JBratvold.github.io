@@ -26,7 +26,7 @@ body {
 }
 
 .section-title {
-  font-size: 5em;
+  font-size: 4em;
   color: white;
 }
 
@@ -36,12 +36,12 @@ body {
 }
 
 .section-text {
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
 }
 
 .sub-title {
-  font-size: 3.5em;
+  font-size: 2.5em;
 }
 
 .sub-horizontal-line {
@@ -216,8 +216,8 @@ a.nav-link:active {
 
 /* ABOUT SKILLS HOBBIES */
 .skill-icon {
-  height: 5em;
-  width: 5em;
+  height: 3em;
+  width: 3em;
   margin: 1em;
   background-color: rgba(255, 255, 255, 0.623);
   padding: 0.5em;
