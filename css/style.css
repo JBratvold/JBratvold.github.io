@@ -683,18 +683,6 @@ a.nav-link:active {
 }
 
 
-@media only screen and (max-width: 320px) {
-  .column-images {
-    height: 0.5em;
-    width: 0.5em;
-    border-radius: 0.25em;
-    margin: 0 auto;
-  }
-  .col {
-    margin: 0;
-  }
-}
-
 
 
 
