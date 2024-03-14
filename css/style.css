@@ -688,6 +688,10 @@ a.nav-link:active {
     height: 0.5em;
     width: 0.5em;
     border-radius: 0.25em;
+    margin: 0 auto;
+  }
+  .col {
+    margin: 0;
   }
 }
 
