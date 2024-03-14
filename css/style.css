@@ -65,10 +65,20 @@ body {
 }
 
 /* SECTIONS */ 
-#projects, #about, #contact {
+#about {
   padding: 4.5em 5em 0em 5em;
   margin-top: 5em;
   margin-bottom: 5em;
+}
+
+#projects {
+  padding: 4.5em 5em 0em 5em;
+  margin-bottom: 5em;
+}
+
+#contact {
+  padding: 4.5em 5em 0em 5em;
+  margin-top: 5em;
 }
 
 #skills, #hobbies {
