@@ -1,8 +1,6 @@
 // gsap.to(".section-title", {duration: 2, x:100});
 
 // Get all elements with the "xyz" class
-const sectionTitles = document.querySelectorAll('.section-title');
-const sectionTexts = document.querySelectorAll('.section-text');
 const slidesFromLeft = document.querySelectorAll('.slide-in-from-left');
 const slidesFromRight = document.querySelectorAll('.slide-in-from-right');
 
