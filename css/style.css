@@ -85,7 +85,7 @@ body {
 }
 
 #skills, #hobbies {
-  margin-top: 2em;
+  margin-top: 12em;
 }
 
 /* NAV BAR */
@@ -683,7 +683,13 @@ a.nav-link:active {
 }
 
 
-
+@media only screen and (max-width: 320px) {
+  .column-images {
+    height: 0.5em;
+    width: 0.5em;
+    border-radius: 0.25em;
+  }
+}
 
 
 
