@@ -1,8 +1,8 @@
 // gsap.to(".section-title", {duration: 2, x:100});
 
 // Get all elements with the "xyz" class
-const slidesFromLeft = document.querySelectorAll('.slide-in-from-left');
-const slidesFromRight = document.querySelectorAll('.slide-in-from-right');
+const slideLeft = document.querySelectorAll('.slide-left');
+const slideRight = document.querySelectorAll('.slide-right');
 
 
 function isInViewport(element) {
@@ -16,7 +16,7 @@ function isInViewport(element) {
 }
 
 // Iterate through each section title and check if it's in the viewport
-slidesFromRight.forEach(item => {
+slideRight.forEach(item => {
     gsap.set(item, { opacity: 0, x:-30 });
     // Add a scroll event listener
     window.addEventListener('scroll', function () {
@@ -31,7 +31,7 @@ slidesFromRight.forEach(item => {
 });
 
 // Iterate through each section title and check if it's in the viewport
-slidesFromLeft.forEach(item => {
+slideLeft.forEach(item => {
     gsap.set(item, { opacity: 0, x:30 }); // Set x to 30 for right slide
     // Add a scroll event listener
     window.addEventListener('scroll', function () {
