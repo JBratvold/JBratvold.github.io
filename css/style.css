@@ -581,7 +581,7 @@ a.nav-link:active {
   }
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 450px) {
   .hello-message h2 {
       margin-top: 0;
       padding-top: 0;
@@ -666,6 +666,22 @@ a.nav-link:active {
     padding: 0em;
   }
 }
+
+@media only screen and (max-height: 650px) {
+  .hello-message h2 {
+    font-size: 4.5em
+  }
+}
+
+@media only screen and (max-height: 550px) {
+  .hello-message h2 {
+    font-size: 3.5em
+  }
+}
+
+
+
+
 
 
 
