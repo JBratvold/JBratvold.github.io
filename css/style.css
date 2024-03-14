@@ -81,7 +81,7 @@ body {
 #contact {
   padding: 4.5em 5em 0em 5em;
   margin-top: 5em;
-  margin-bottom: 10em;
+  margin-bottom: 20em;
 }
 
 #skills, #hobbies {
@@ -291,8 +291,6 @@ a.nav-link:active {
       transform: translateY(-10px);
   }
 }
-
-/* CONTACT */
 
 /* FOOTER */
 .josh-contact-fa {
@@ -686,8 +684,6 @@ a.nav-link:active {
 
 @media only screen and (max-width: 400px) {
   .column-images {
-    background-color: red;
-    color: green;
     height: 15em;
     width: 15em;
   }
