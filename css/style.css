@@ -316,6 +316,7 @@ a.nav-link:active {
 
 .footer {
   height: 5em;
+  margin: -5em -5em 0; /* Fix weird scrolling on mobiles */
 }
 
 .footer-name {
