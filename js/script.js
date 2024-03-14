@@ -7,11 +7,11 @@ const slideRight = document.querySelectorAll('.slide-right');
 
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
+    const threshold = 0.7; // Adjust this value to change the trigger point
+
     return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        rect.top <= window.innerHeight * threshold &&
+        rect.bottom >= 0
     );
 }
 
