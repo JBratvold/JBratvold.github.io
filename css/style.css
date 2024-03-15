@@ -26,6 +26,11 @@ body {
     color: gold;
 }
 
+.highlight-text:hover {
+    font-weight: bolder;
+    color: goldenrod;
+}
+
 .section-title {
     font-size: 4em;
     color: white;
@@ -59,11 +64,6 @@ body {
     height: 22em;
     width: 22em;
     border-radius: 1em;
-}
-
-/* Font Awesome Icons */
-.fa-canadian-maple-leaf {
-    color: red;
 }
 
 /* SECTIONS */
@@ -248,6 +248,141 @@ a.nav-link:hover {
     }
     50% {
         transform: translateY(-10px);
+    }
+}
+
+
+/* Font Awesome Icons */
+.fa-canadian-maple-leaf {
+    color: red;
+}
+
+.fa-dog {
+    color: rgb(79, 56, 56);
+    margin-left: 0.4em;
+}
+
+/* Explosion particle */
+.hover-fireworks::before,
+.hover-fireworks::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(42, 57, 125); /* Adjust color as needed */
+    border-radius: 50%;
+    opacity: 0; /* Initially hide particles */
+}
+
+.hover-fireworks:hover {
+    color: rgb(42, 57, 125);
+}
+
+.hover-fireworks {
+    color: gold;
+}
+
+/* Rotate maple leaf back and forth */
+.rotate-leaf {
+    transition: transform 0.5s ease; /* Add transition for smooth animation */
+}
+
+.rotate-leaf:hover {
+    transform: rotate(45deg); /* Rotate maple leaf by 45 degrees on hover */
+}
+
+/* Show particle on hover */
+.hover-fireworks:hover::after {
+    top: -10px;
+    left: 80px;
+    animation: firework 1s ease forwards; /* Apply animation */
+}
+
+/* Keyframes for explosion animation */
+@keyframes firework {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+.highlight-word {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+/* First "Woof" text */
+.highlight-word:hover::before {
+    content: "Woof!";
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    animation: pop-up-1 0.5s ease-in-out forwards, float-up 2s ease-in-out 0.25s; /* 0.5-second delay */
+    color: rgb(83, 54, 54);
+    font-weight: bolder;
+}
+
+/* Second "Woof Woof" text s */
+.highlight-word:hover::after {
+    content: "Woof!";
+    position: absolute;
+    bottom: 5%;
+    left: 200%;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    animation: pop-up-2 1s ease-in-out forwards, float-up 2s ease-in-out 0.25s; /* 1-second delay */
+    color: rgb(83, 54, 54);
+    font-weight: bolder;
+}
+
+@keyframes pop-up-1 {
+    0% {
+        transform: translate(-50%, 0) scale(0) rotate(-45deg);;
+        opacity: 0;
+    }
+    80% {
+        transform: translate(-50%, -20px) scale(1.1) rotate(-45deg);;
+    }
+    99% {
+        transform: translate(-50%, -20px) scale(1) rotate(-45deg);;
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -20px) scale(1) rotate(-45deg);;
+        opacity: 0;
+    }  
+}
+@keyframes pop-up-2 {
+    0% {
+        transform: translate(-50%, 0) scale(0) rotate(45deg);;
+        opacity: 0;
+    }
+    80% {
+        transform: translate(-50%, -20px) scale(1.1) rotate(45deg);;
+    }
+    99% {
+        transform: translate(-50%, -20px) scale(1) rotate(45deg);;
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -20px) scale(1) rotate(45deg);;
+        opacity: 0;
+    }  
+}
+@keyframes float-up {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100px);
     }
 }
 
@@ -612,84 +747,5 @@ a.nav-link:hover {
     .column-images {
         height: 15em;
         width: 15em;
-    }
-}
-
-.highlight-word {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-
-/* First "Woof Woof" text without rotation */
-.highlight-word:hover::before {
-    content: "Woof";
-    position: absolute;
-    bottom: 50%;
-    left: 5%;
-    transform: rotate(-45deg); /* Rotate by -45 degrees */
-    font-family: Arial, sans-serif;
-    opacity: 0;
-    animation: pop-up-1 0.5s ease-in-out forwards, float-up 2s ease-in-out 0.25s; /* 1-second delay */
-    color: rgb(83, 54, 54);
-    font-weight: bolder;
-}
-
-/* Second "Woof Woof" text angled at 45 degrees */
-.highlight-word:hover::after {
-    content: "Woof";
-    position: absolute;
-    bottom: 5%;
-    left: 125%;
-    transform: rotate(-45deg); /* Rotate by -45 degrees */
-    font-family: Arial, sans-serif;
-    opacity: 0;
-    animation: pop-up-2 1s ease-in-out forwards, float-up 2s ease-in-out 0.25s; /* 1-second delay */
-    color: rgb(83, 54, 54);
-    font-weight: bolder;
-}
-
-@keyframes pop-up-1 {
-    0% {
-        transform: translate(-50%, 0) scale(0) rotate(-45deg);;
-        opacity: 0;
-    }
-    80% {
-        transform: translate(-50%, -20px) scale(1.1) rotate(-45deg);;
-    }
-    99% {
-        transform: translate(-50%, -20px) scale(1) rotate(-45deg);;
-        opacity: 1;
-    }
-    100% {
-        transform: translate(-50%, -20px) scale(1) rotate(-45deg);;
-        opacity: 0;
-    }  
-}
-@keyframes pop-up-2 {
-    0% {
-        transform: translate(-50%, 0) scale(0) rotate(45deg);;
-        opacity: 0;
-    }
-    80% {
-        transform: translate(-50%, -20px) scale(1.1) rotate(45deg);;
-    }
-    99% {
-        transform: translate(-50%, -20px) scale(1) rotate(45deg);;
-        opacity: 1;
-    }
-    100% {
-        transform: translate(-50%, -20px) scale(1) rotate(45deg);;
-        opacity: 0;
-    }  
-}
-
-@keyframes float-up {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-100px);
     }
 }
