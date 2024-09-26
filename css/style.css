@@ -19,6 +19,8 @@ body {
     padding-right: 15em;
     background-image: url("/img/background-content.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding-top: 5em;
 }
 
