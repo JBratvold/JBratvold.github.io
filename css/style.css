@@ -260,7 +260,7 @@ a.nav-link:hover {
 }
 
 .fa-dog {
-    color: rgb(79, 56, 56);
+    color: rgb(146, 117, 117);
     margin-left: 0.4em;
 }
 
@@ -271,13 +271,13 @@ a.nav-link:hover {
     position: absolute;
     width: 50px;
     height: 50px;
-    background-color: rgb(42, 57, 125); /* Adjust color as needed */
+    background-color: rgb(28, 239, 214); /* Adjust color as needed */
     border-radius: 50%;
     opacity: 0; /* Initially hide particles */
 }
 
 .hover-fireworks:hover {
-    color: rgb(42, 57, 125);
+    color: rgb(28, 239, 214);
 }
 
 .hover-fireworks {
@@ -327,7 +327,7 @@ a.nav-link:hover {
     font-family: Arial, sans-serif;
     opacity: 0;
     animation: pop-up-1 0.5s ease-in-out forwards, float-up 2s ease-in-out 0.25s; /* 0.5-second delay */
-    color: rgb(83, 54, 54);
+    color: rgb(146, 117, 117);
     font-weight: bolder;
 }
 
@@ -340,7 +340,7 @@ a.nav-link:hover {
     font-family: Arial, sans-serif;
     opacity: 0;
     animation: pop-up-2 1s ease-in-out forwards, float-up 2s ease-in-out 0.25s; /* 1-second delay */
-    color: rgb(83, 54, 54);
+    color: rgb(146, 117, 117);
     font-weight: bolder;
 }
 
